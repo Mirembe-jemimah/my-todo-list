@@ -1,0 +1,28 @@
+body{
+    background: linear-gradient(to bottom, #6600cc 0%, #cc00cc 100%);
+    margin: 35px;
+    padding: 0px;
+}
+
+h3{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.form-label{
+    font-size: 20px;
+}
+.form-control{
+    padding: 8px;
+    border-spacing: 2px;
+    margin: 5px;
+    background: linear-gradient(to bottom, #3399ff 0%, #00ffcc 100%);
+    text-decoration: #6600cc;
+}
+input{
+    color: #ff0000;
+}
+
+textarea:focus, input:focus {
+    color: #ff0000;
+}
