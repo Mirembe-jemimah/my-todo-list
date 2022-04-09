@@ -11,21 +11,16 @@
 <body>
     <h3>TODO LIST</h3>
     <h4>Things to do when I reach school evey morning.</h4>
-    <ul>
-        <li>Attend morning classes.</li>
-        <li>Go for lunch at 1pm.</li>
-        <li>Join my discussion group after lunch.</li>
+    <ul id="todos"> 
+        <li id="list1">Attend morning classes.</li>
+        <li id="list2">Go for lunch at 1pm.</li>
+        <li id="list3">Join my discussion group after lunch.</li>
     </ul>
     <div class="mb-3"><form  action="." method="post" id="forms">
         <br><label for="formGroupExampleInput" class="form-label">To Do list</label>
-        <input type="text1" class="form-control" id="text1" placeholder="First item" >
-        <input type="text2" class="form-control" id="text2" placeholder="Second item">
-        <input type="text3" class="form-control" id="text3" placeholder="Third item">
-        <input type="text4" class="form-control" id="text4" placeholder="Fourth item">
-        <input type="text5" class="form-control" id="text5" placeholder="Fifth item">
-        <input type="text6" class="form-control" id="text6" placeholder="sixth item">
+        <input type="text1" class="form-control" id="text1" placeholder="Your item" >
         <div class="col-12">
-            <button type="submit" class="btn btn-primary" value="post">Enter</button>
+            <button type="submit" class="btn btn-primary" onclick="nextTodo()" value="post">Enter</button>
           </div>
     </form>
       

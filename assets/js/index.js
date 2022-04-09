@@ -1,50 +1,56 @@
 
-const posts = [];
+ const posts = [];
 
-// simple form processing
+ // simple form processing
+ //const lists =document.querySelector("todos");
 const form = document.querySelector("form");
+// let list1 = lists.list1;
+// let list2 = lists.list2;
+// let list3 = lists.list3;
 let text1 = form.text1;
-let text2 = form.text2;
-let text3 = form.text3;
-let text4 = form.text4;
-let text5 = form.text5;
 
-//getting elememts by using id
- text1 = document.getElementById('text1');
- text2 = document.getElementById('text2');
- text3 = document.getElementById('text3');
- text4 = document.getElementById('text4');
-//text4 = document.appendChild('text4');
-  text5 = document.getElementById('text5');
-// function createFormItem(sixth) {
-//     let input = document.createElement('text6');
-//     input.textContent = sixth;
-//     return input;
-// }
 
-// const forms = document.querySelector('#forms');
-// forms.appendChild(createFormItem('sixth thing'));
 
-const node = document.createElement("text6");
-const textnode = document.createTextNode("Sixth item");
-node.appendChild(textnode);
-document.getElementById("text6").appendChild(node)
- 
- 
+//add new todos
+function nextTodo() {
+  var li = document.createElement("li");
+  var inp = document.getElementById("text1").value;
+  var y = document.createTextNode(inp);
+  li.appendChild(y);
+  if (inp === '') {
+    alert("You must write something!");
+  } else {
+    document.getElementById("todos").appendChild(li);
+  }
+  document.getElementById("text1").value = "";
+}
 
-form.addEventListener('submit', (e) => {
+
+ form.addEventListener('submit', (e) => {
     e.preventDefault();  // stop operations until i say so
 
 
     let todo = {
         text1: text1.value,
-        text2: text2.value,
-        text3: text3.value,
-        text4: text4.value,
-        text5: text5.value,
+          
     }
 
-    // console.log('submited', blogBost)
+    // console.log('submited', posts)
     const posts = [todo]
-    console.log('submitted', posts)
+    console.log('submitted', posts);
 })
+// todos.addEventListener('submit', (e) => {
+//   e.preventDefault();  // stop operations until i say so
+
+
+//   let todoj = {
+//       list1: list1.value,
+//       list2: list2.value,
+//       list3: list3.value,
+     
+//   }
+
+//   // console.log('submited', posts)
+//   const posts = [todoj]
+//   console.log('submitted', posts);
+// })
